@@ -10,8 +10,8 @@ function Menu() {
       <Link to="/">
         <img className="Logo" src={Logo} alt="RafaoFlix Logo" />
       </Link>
-      <Button to="/cadastro/video" className="ButtonLink">
-        Novo vídeo
+      <Button to="/menu" className="ButtonLink">
+        Menu
       </Button>
     </nav>
   );

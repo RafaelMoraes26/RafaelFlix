@@ -120,7 +120,7 @@ function FormField({ label, type, name, value, onChange, suggestions }) {
 
 FormField.defaultProps = {
   type: 'text',
-  value: '',
+  value: '',
   onChange: () => { },
   suggestions: [],
 };

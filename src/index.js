@@ -4,19 +4,23 @@ import './index.css';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Menu from './pages/Menu';
 import CadastroVideo from './pages/cadastro/Video';
 import CadastroCategoria from './pages/cadastro/Categoria';
-
-// Desafio master blaster na descrição
-const Pagina404 = () => (<div>Página 404</div>);
+import DeletarVideo from './pages/deletar/Video';
+import DeletarCategoria from './pages/deletar/Categoria';
+import NotFound from './pages/404';
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/" component={Home} exact />
+      <Route path="/menu" component={Menu} />
       <Route path="/cadastro/video" component={CadastroVideo} />
       <Route path="/cadastro/categoria" component={CadastroCategoria} />
-      <Route component={Pagina404} />
+      <Route path="/deletar/video" component={DeletarVideo} />
+      <Route path="/deletar/categoria" component={DeletarCategoria} />
+      <Route component={NotFound} />
     </Switch>
   </BrowserRouter>,
   document.getElementById('root'),
