@@ -11,10 +11,10 @@ function Menu() {
         <br />
         <br />
         <div className="Wrapper">
-          <Button to="/cadastro/video"> Novo Vídeo</Button>
-          <Button to="/cadastro/categoria"> Nova Categoria</Button>
-          <Button to="/deletar/video"> Deletar Vídeo</Button>
-          <Button to="/deletar/categoria"> Deletar Categoria</Button>
+          <Button className="nv" to="/cadastro/video"> Novo Vídeo</Button>
+          <Button className="nc" to="/cadastro/categoria"> Nova Categoria</Button>
+          <Button className="dv" to="/deletar/video"> Deletar Vídeo</Button>
+          <Button className="dc" to="/deletar/categoria"> Deletar Categoria</Button>
         </div>
       </div>
     </PageDefault>

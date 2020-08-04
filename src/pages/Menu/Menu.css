@@ -13,21 +13,49 @@
 }
    
 .Wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 70%;
+    width: 50%;
+    margin-top: 2em;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    grid-template-areas: 
+    "nv nc"
+    "dv dc";
+}
+
+.nv {
+    grid-area: nv;
+    align-self: center;
+    margin: 0;
+    text-align: center;
+}
+
+.nc {
+    grid-area: nc;
+    align-self: center;
+    margin: 0;
+    text-align: center;
+}
+
+.dv {
+    grid-area: dv;
+    align-self: center;
+    margin: 0;
+    text-align: center;
+}
+
+.dc {
+    grid-area: dc;
+    align-self: center;
+    margin: 0;
+    text-align: center;
 }
 
 @media (max-width: 800px) {
-    .MenuWrapper{
-        top: 5%;
-    }
-
+    
     .Wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
+        width: 100%;
+        gap: 2em;
     }
 }
